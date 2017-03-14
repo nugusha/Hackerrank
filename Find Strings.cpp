@@ -77,8 +77,6 @@ void suff ()
                          }
 }
 int main(){
-    
-    
     cin>>n;
     
     for(i=0;i<n;i++)
@@ -91,8 +89,6 @@ int main(){
     suff();
     for(i=0;i<s.size();i++)cur[i].se*=-1;
     
-    
-    
     for(i=0;i<s.size();i++)
     {
        if(!i){o[i]=0;continue;}
@@ -102,9 +98,7 @@ int main(){
     for(i=s.size()-1;i>=0;i--)
     {
              if (s[i] > 33 ) pp[i]=0; else pp[i]=pp[i+1]+1;                
-                              
     }
-    
     
     int mm;
     cin>>mm;
@@ -122,7 +116,6 @@ int main(){
              k-=pp[cur[i].se]-o[i];
             }
           }
-          if(!fl)cout<<"INVALID"<<endl;
-                    
+          if(!fl)cout<<"INVALID"<<endl;    
        }
 }
